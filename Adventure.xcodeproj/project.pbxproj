@@ -21,6 +21,9 @@
 		9EBFD209187DDA78003CDAA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBFD1EB187DDA78003CDAA9 /* UIKit.framework */; };
 		9EBFD211187DDA78003CDAA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EBFD20F187DDA78003CDAA9 /* InfoPlist.strings */; };
 		9EBFD213187DDA78003CDAA9 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFD212187DDA78003CDAA9 /* AdventureTests.m */; };
+		9EBFD21D187DDCC5003CDAA9 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBFD21C187DDCC5003CDAA9 /* CheckMate.framework */; };
+		9EBFD220187DFE1A003CDAA9 /* AdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFD21F187DFE1A003CDAA9 /* AdventureViewController.m */; };
+		9EBFD223187E0262003CDAA9 /* StretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFD222187E0262003CDAA9 /* StretchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		9EBFD20E187DDA78003CDAA9 /* AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		9EBFD210187DDA78003CDAA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9EBFD212187DDA78003CDAA9 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
+		9EBFD21C187DDCC5003CDAA9 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = "../../Desktop/CHECKMATE FRAMEWORK 4/CheckMate.framework"; sourceTree = "<group>"; };
+		9EBFD21E187DFE1A003CDAA9 /* AdventureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventureViewController.h; sourceTree = "<group>"; };
+		9EBFD21F187DFE1A003CDAA9 /* AdventureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdventureViewController.m; sourceTree = "<group>"; };
+		9EBFD221187E0262003CDAA9 /* StretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchViewController.h; sourceTree = "<group>"; };
+		9EBFD222187E0262003CDAA9 /* StretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBFD21D187DDCC5003CDAA9 /* CheckMate.framework in Frameworks */,
 				9EBFD1EA187DDA78003CDAA9 /* CoreGraphics.framework in Frameworks */,
 				9EBFD1EC187DDA78003CDAA9 /* UIKit.framework in Frameworks */,
 				9EBFD1E8187DDA78003CDAA9 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		9EBFD1E6187DDA78003CDAA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EBFD21C187DDCC5003CDAA9 /* CheckMate.framework */,
 				9EBFD1E7187DDA78003CDAA9 /* Foundation.framework */,
 				9EBFD1E9187DDA78003CDAA9 /* CoreGraphics.framework */,
 				9EBFD1EB187DDA78003CDAA9 /* UIKit.framework */,
@@ -115,6 +125,10 @@
 				9EBFD1F6187DDA78003CDAA9 /* AppDelegate.h */,
 				9EBFD1F7187DDA78003CDAA9 /* AppDelegate.m */,
 				9EBFD1F9187DDA78003CDAA9 /* Main.storyboard */,
+				9EBFD221187E0262003CDAA9 /* StretchViewController.h */,
+				9EBFD222187E0262003CDAA9 /* StretchViewController.m */,
+				9EBFD21E187DFE1A003CDAA9 /* AdventureViewController.h */,
+				9EBFD21F187DFE1A003CDAA9 /* AdventureViewController.m */,
 				9EBFD1FC187DDA78003CDAA9 /* ViewController.h */,
 				9EBFD1FD187DDA78003CDAA9 /* ViewController.m */,
 				9EBFD1FF187DDA78003CDAA9 /* Images.xcassets */,
@@ -250,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EBFD1FE187DDA78003CDAA9 /* ViewController.m in Sources */,
+				9EBFD220187DFE1A003CDAA9 /* AdventureViewController.m in Sources */,
 				9EBFD1F8187DDA78003CDAA9 /* AppDelegate.m in Sources */,
 				9EBFD1F4187DDA78003CDAA9 /* main.m in Sources */,
+				9EBFD223187E0262003CDAA9 /* StretchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sajscompton/Desktop/CHECKMATE\\ FRAMEWORK\\ 4",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -391,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sajscompton/Desktop/CHECKMATE\\ FRAMEWORK\\ 4",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
